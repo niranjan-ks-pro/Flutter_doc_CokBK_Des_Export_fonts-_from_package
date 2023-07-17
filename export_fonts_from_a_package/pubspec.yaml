@@ -1,0 +1,27 @@
+name: export_fonts_from_a_package
+description: A new Flutter project.
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=3.0.5 <4.0.0'
+
+dependencies:
+  awesome_package:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+
+flutter:
+  fonts:
+    - family: Raleway
+      fonts:
+        - asset: packages/awesome_package/fonts/Raleway-Italic-VariableFont_wght.ttf
+        - asset: packages/awesome_package/fonts/Raleway-VariableFont_wght.ttf
+          style: italic
+  uses-material-design: true
